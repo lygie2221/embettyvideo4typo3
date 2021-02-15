@@ -1,0 +1,18 @@
+<script src="/typo3conf/ext/embettyvideo4typo3/Resources/Public/JS/embetty.js?ver=1" type="application/javascript"></script>
+
+<div class="video-container-wrapper">
+    <h2>{video.title}</h2>
+    <div class="video-container">
+        <f:if condition="{video.coverimage}">
+            <f:then>
+                <embetty-video type="youtube" rel="0" start-at="0" video-id="{video.videoid}"
+                               poster-image="{f:uri.image(image:video.coverimage)}"></embetty-video>
+            </f:then>
+            <f:else>
+                <embetty-video type="youtube" rel="0" start-at="0" video-id="{video.videoid}"
+                               ></embetty-video>
+            </f:else>
+        </f:if>
+    </div>
+</div>
+

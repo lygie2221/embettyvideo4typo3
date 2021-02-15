@@ -1,0 +1,15 @@
+
+plugin.tx_embettyvideo4typo3_video {
+    view {
+        # cat=plugin.tx_embettyvideo4typo3_video/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:embettyvideo4typo3/Resources/Private/Templates/
+        # cat=plugin.tx_embettyvideo4typo3_video/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:embettyvideo4typo3/Resources/Private/Partials/
+        # cat=plugin.tx_embettyvideo4typo3_video/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:embettyvideo4typo3/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_embettyvideo4typo3_video//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

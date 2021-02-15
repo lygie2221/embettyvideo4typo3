@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:embettyvideo4typo3/Resources/Private/Language/locallang_csh" date="2021-02-14T14:41:39Z" product-name="embettyvideo4typo3">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="videoid.description" resname="videoid.description">
+				<source>videoid</source>
+			</trans-unit>
+			<trans-unit id="coverimage.description" resname="coverimage.description">
+				<source>coverimage</source>
+			</trans-unit>
+			<trans-unit id="overlayimage.description" resname="overlayimage.description">
+				<source>overlayimage</source>
+			</trans-unit>
+			<trans-unit id="description.description" resname="description.description">
+				<source>description</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

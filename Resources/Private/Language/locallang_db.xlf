@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:embettyvideo4typo3/Resources/Private/Language/locallang_db" date="2021-02-14T14:41:39Z" product-name="embettyvideo4typo3">
+		<header/>
+		<body>
+			<trans-unit id="tx_embettyvideo4typo3_domain_model_video" resname="tx_embettyvideo4typo3_domain_model_video">
+				<source>Video</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_domain_model_video.title" resname="tx_embettyvideo4typo3_domain_model_video.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_domain_model_video.videoid" resname="tx_embettyvideo4typo3_domain_model_video.videoid">
+				<source>Videoid</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_domain_model_video.coverimage" resname="tx_embettyvideo4typo3_domain_model_video.coverimage">
+				<source>Coverimage</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_domain_model_video.overlayimage" resname="tx_embettyvideo4typo3_domain_model_video.overlayimage">
+				<source>Overlayimage</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_domain_model_video.description" resname="tx_embettyvideo4typo3_domain_model_video.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_video.name" resname="tx_embettyvideo4typo3_video.name">
+				<source>video</source>
+			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_video.description" resname="tx_embettyvideo4typo3_video.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

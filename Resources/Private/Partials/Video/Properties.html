@@ -1,0 +1,44 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-embettyvideo4typo3" >
+	<tr>
+		<td>
+			<f:translate key="tx_embettyvideo4typo3_domain_model_video.title" />
+		</td>
+		<td>
+		{video.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_embettyvideo4typo3_domain_model_video.videoid" />
+		</td>
+		<td>
+		{video.videoid}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_embettyvideo4typo3_domain_model_video.coverimage" />
+		</td>
+		<td>
+				<f:image src="{video.coverimage.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_embettyvideo4typo3_domain_model_video.overlayimage" />
+		</td>
+		<td>
+				<f:image src="{video.overlayimage.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_embettyvideo4typo3_domain_model_video.description" />
+		</td>
+		<td>
+		{video.description}
+		</td>
+	</tr>
+</table>
+</html>
