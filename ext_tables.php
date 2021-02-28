@@ -10,6 +10,12 @@ call_user_func(
             'Video',
             'video'
         );
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'Te.Embettyvideo4typo3',
+            'Videos',
+            'videos'
+        );
+
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('embettyvideo4typo3', 'Configuration/TypoScript', 'Embetty Video 4 Typo3');
 

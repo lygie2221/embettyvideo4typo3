@@ -57,3 +57,5 @@ plugin.tx_embettyvideo4typo3._CSS_DEFAULT_STYLE (
         color:green;
     }
 )
+
+page.includeCSS.embettyvideo4typo3_1 = EXT:embettyvideo4typo3/Resources/Public/CSS/style.css

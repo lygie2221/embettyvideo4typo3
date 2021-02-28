@@ -25,8 +25,14 @@
 				<source>video</source>
 			</trans-unit>
 			<trans-unit id="tx_embettyvideo4typo3_video.description" resname="tx_embettyvideo4typo3_video.description">
-				<source></source>
+				<source>Shows Video (singleview)</source>
 			</trans-unit>
+			<trans-unit id="tx_embettyvideo4typo3_videos.name" resname="tx_embettyvideo4typo3_videos.name">
+					<source>videos</source>
+				</trans-unit>
+				<trans-unit id="tx_embettyvideo4typo3_videos.description" resname="tx_embettyvideo4typo3_videos.description">
+					<source>Shows list of videos to play (listview)</source>
+				</trans-unit>
 		</body>
 	</file>
 </xliff>

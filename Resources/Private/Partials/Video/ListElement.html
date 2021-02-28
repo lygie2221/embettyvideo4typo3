@@ -1,0 +1,9 @@
+<f:if condition="{video.coverimage}">
+    <f:image src="{video.coverimage.uid}" treatIdAsReference="1"
+             title="{video.coverimage.originalResource.title}"
+             alt="{video.coverimage.originalResource.alternative}"
+    />
+    <h2>{video.title}</h2>
+    <hp><f:format.html>{video.description}</f:format.html></hp>
+
+</f:if>

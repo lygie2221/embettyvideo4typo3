@@ -9,7 +9,7 @@ namespace Te\Embettyvideo4typo3\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- *  (c) 2021 
+ *  (c) 2021
  *
  ***/
 /**
@@ -20,44 +20,37 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * title
-     * 
+     *
      * @var string
      */
     protected $title = '';
 
     /**
      * videoid
-     * 
+     *
      * @var string
      */
     protected $videoid = '';
 
     /**
      * coverimage
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
     protected $coverimage = null;
 
-    /**
-     * overlayimage
-     * 
-     * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
-     */
-    protected $overlayimage = null;
 
     /**
      * description
-     * 
+     *
      * @var string
      */
     protected $description = '';
 
     /**
      * Returns the title
-     * 
+     *
      * @return string $title
      */
     public function getTitle()
@@ -67,7 +60,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the title
-     * 
+     *
      * @param string $title
      * @return void
      */
@@ -78,7 +71,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the videoid
-     * 
+     *
      * @return string $videoid
      */
     public function getVideoid()
@@ -88,7 +81,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the videoid
-     * 
+     *
      * @param string $videoid
      * @return void
      */
@@ -99,7 +92,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the coverimage
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $coverimage
      */
     public function getCoverimage()
@@ -109,7 +102,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the coverimage
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $coverimage
      * @return void
      */
@@ -120,7 +113,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the overlayimage
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $overlayimage
      */
     public function getOverlayimage()
@@ -130,7 +123,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the overlayimage
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $overlayimage
      * @return void
      */
@@ -141,7 +134,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the description
-     * 
+     *
      * @return string $description
      */
     public function getDescription()
@@ -151,7 +144,7 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the description
-     * 
+     *
      * @param string $description
      * @return void
      */

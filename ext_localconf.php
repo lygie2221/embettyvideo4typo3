@@ -9,7 +9,18 @@ call_user_func(
             'Te.Embettyvideo4typo3',
             'Video',
             [
-                'Video' => 'show,list'
+                'Video' => 'show'
+            ],
+            // non-cacheable actions
+            [
+                'Video' => ''
+            ]
+        );
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'Te.Embettyvideo4typo3',
+            'Videos',
+            [
+                'Video' => 'list, show'
             ],
             // non-cacheable actions
             [
@@ -30,6 +41,15 @@ call_user_func(
                                 list_type = embettyvideo4typo3_video
                             }
                         }
+                        videos {
+                            iconIdentifier = embettyvideo4typo3-plugin-videos
+                            title = LLL:EXT:embettyvideo4typo3/Resources/Private/Language/locallang_db.xlf:tx_embettyvideo4typo3_videos.name
+                            description = LLL:EXT:embettyvideo4typo3/Resources/Private/Language/locallang_db.xlf:tx_embettyvideo4typo3_videos.description
+                            tt_content_defValues {
+                                CType = list
+                                list_type = embettyvideo4typo3_videos
+                            }
+                        }
                     }
                     show = *
                 }
@@ -42,6 +62,12 @@ call_user_func(
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
 				['source' => 'EXT:embettyvideo4typo3/Resources/Public/Icons/user_plugin_video.svg']
 			);
+
+        $iconRegistry->registerIcon(
+            'embettyvideo4typo3-plugin-videos',
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:embettyvideo4typo3/Resources/Public/Icons/user_plugin_video.svg']
+        );
 
     }
 );
