@@ -53,6 +53,27 @@ class VideoController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     public function showAction(\Te\Embettyvideo4typo3\Domain\Model\Video $video = null)
     {
         if(!$video){
+
+            $pidList = $this->configurationManager->getConfiguration(
+                \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK
+            )['persistence']['storagePid'];
+
+
+            if(empty($pidList)){
+
+
+                $pid=$GLOBALS['TSFE']->id;
+
+                $objectManager =
+                    \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Object\\ObjectManager');
+                $defaultQuerySettings =
+                    $objectManager->get('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\Typo3QuerySettings');
+                $defaultQuerySettings->setStoragePageIds([$pid]);
+
+                $this->videoRepository->setDefaultQuerySettings($defaultQuerySettings);
+            }
+
+
             $this->videoRepository->findAll();
             $video=$this->videoRepository->findAll()[0];
         }
