@@ -6,25 +6,25 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Te.Embettyvideo4typo3',
+            'Embettyvideo4typo3',
             'Video',
             [
-                'Video' => 'show'
+                \Te\Embettyvideo4typo3\Controller\VideoController::class => 'show'
             ],
             // non-cacheable actions
             [
-                'Video' => ''
+                \Te\Embettyvideo4typo3\Controller\VideoController::class  => ''
             ]
         );
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'Te.Embettyvideo4typo3',
+            'Embettyvideo4typo3',
             'Videos',
             [
-                'Video' => 'list, show'
+                \Te\Embettyvideo4typo3\Controller\VideoController::class  => 'list, show'
             ],
             // non-cacheable actions
             [
-                'Video' => ''
+                \Te\Embettyvideo4typo3\Controller\VideoController::class  => ''
             ]
         );
         // wizards

@@ -2,6 +2,8 @@
 namespace Te\Embettyvideo4typo3\Controller;
 
 
+use Te\Embettyvideo4typo3\Domain\Model\Video;
+
 /***
  *
  * This file is part of the "Embetty Video 4 Typo3" Extension for TYPO3 CMS.
@@ -47,10 +49,10 @@ class VideoController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * action show
      *
-     * @param \Te\Embettyvideo4typo3\Domain\Model\Video|null $video
+     * @param Video|null $video
      * @return void
      */
-    public function showAction(\Te\Embettyvideo4typo3\Domain\Model\Video $video = null)
+    public function showAction(Video $video = null)
     {
         if(!$video){
 

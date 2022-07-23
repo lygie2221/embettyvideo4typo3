@@ -6,12 +6,12 @@ call_user_func(
     {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'Te.Embettyvideo4typo3',
+            'Embettyvideo4typo3',
             'Video',
             'video'
         );
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'Te.Embettyvideo4typo3',
+            'Embettyvideo4typo3',
             'Videos',
             'videos'
         );
