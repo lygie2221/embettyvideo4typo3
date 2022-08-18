@@ -26,6 +26,14 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $title = '';
 
     /**
+     * $plattform
+     *
+     * @var int
+     */
+    protected $plattform = 0;
+
+
+    /**
      * videoid
      *
      * @var string
@@ -152,4 +160,22 @@ class Video extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->description = $description;
     }
+
+    /**
+     * @return int
+     */
+    public function getPlattform()
+    {
+        return $this->plattform;
+    }
+
+    /**
+     * @param int $plattform
+     */
+    public function setPlattform($plattform)
+    {
+        $this->plattform = $plattform;
+    }
+
+
 }

@@ -20,10 +20,10 @@ return [
         'iconfile' => 'EXT:embettyvideo4typo3/Resources/Public/Icons/tx_embettyvideo4typo3_domain_model_video.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, videoid, coverimage, description',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, plattform, videoid, coverimage, description',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, videoid, coverimage, description, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, plattform, videoid, coverimage, description, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -123,6 +123,21 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
+            ],
+        ],
+        'plattform' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:embettyvideo4typo3/Resources/Private/Language/locallang_db.xlf:tx_embettyvideo4typo3_domain_model_video.plattform',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['Youtube', 0],
+                    ['Vimeo', 1],
+                ],
+                'size' => 1,
+                'maxitems' => 1,
+                'eval' => ''
             ],
         ],
         'videoid' => [

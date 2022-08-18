@@ -3,16 +3,33 @@
 <div class="video-container-wrapper">
     <h2>{video.title}</h2>
     <div class="video-container">
-        <f:if condition="{video.coverimage}">
+        <f:if condition="{video.plattform} == 1">
             <f:then>
-                <embetty-video type="youtube" rel="0" start-at="0" video-id="{video.videoid}"
-                               poster-image="{f:uri.image(image:video.coverimage)}"></embetty-video>
+                <f:if condition="{video.coverimage}">
+                    <f:then>
+                        <embetty-video type="vimeo" rel="0" start-at="0" video-id="{video.videoid}"
+                                       poster-image="{f:uri.image(image:video.coverimage)}"></embetty-video>
+                    </f:then>
+                    <f:else>
+                        <embetty-video type="vimeo" rel="0" start-at="0" video-id="{video.videoid}"
+                                       ></embetty-video>
+                    </f:else>
+                </f:if>
             </f:then>
             <f:else>
-                <embetty-video type="youtube" rel="0" start-at="0" video-id="{video.videoid}"
-                               ></embetty-video>
+                <f:if condition="{video.coverimage}">
+                    <f:then>
+                        <embetty-video type="youtube" rel="0" start-at="0" video-id="{video.videoid}"
+                                       poster-image="{f:uri.image(image:video.coverimage)}"></embetty-video>
+                    </f:then>
+                    <f:else>
+                        <embetty-video type="youtube" rel="0" start-at="0" video-id="{video.videoid}"
+                        ></embetty-video>
+                    </f:else>
+                </f:if>
             </f:else>
         </f:if>
+
     </div>
 </div>
 
